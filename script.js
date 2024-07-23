@@ -11,9 +11,11 @@ function createGrid() {
     square.className = "in-square";
     container.appendChild(square);
     square.addEventListener("mouseover", () => {
-      square.style.background = "red";
+      square.style.backgroundColor = "red";
     });
   }
+  //clear input box
+  gridSize.value = "";
 }
 
 initBtn.addEventListener("click", createGrid);
